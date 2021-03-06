@@ -19,3 +19,10 @@ firstParagraph.style.fontWeight = 'bold';
 let animalImageElement = document.getElementsByTagName('img')[0];
 animalImageElement.setAttribute('src', 'pes.jpg');
 animalImageElement.setAttribute('alt', 'Silný pes');
+
+// 4. Přemístění a otočení čtverečku
+let squareElement = document.querySelector('.ctverecek');
+document.querySelector('body').insertBefore(squareElement, document.querySelector('#js-main-heading'));
+// Pomocí následujícího příkazu přesunu čteveček ještě do paragrafu
+//firstParagraph.appendChild(squareElement);
+squareElement.style.transform = 'rotate(-90deg)';
