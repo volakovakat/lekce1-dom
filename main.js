@@ -2,3 +2,14 @@
 
 // 1. JavaScriptem změnit barvu nadpisu.
 document.getElementById('js-main-heading').style.color = '#006400';
+
+// 2. Změna dekorace odstace. (Poznámka: Zde slouží pro demonstraci, ale obecně je lepší tyto jednoduché změny a úpravy dělat pomocí CSS!)
+let paragraphs = document.getElementsByClassName('js-paragraph');
+let firstParagraph = paragraphs[0];
+// Pomocí následujícího příkazu si mohu vypsat prvek do konzole. Vhodé při ladění programu.
+// console.log(paragraph);
+firstParagraph.style.fontSize = '26px';
+// Pomocí následujícího příkazu si mohu vypsat nastavenou velikost písma.
+//console.log(firstParagraph.style.fontSize);
+firstParagraph.style.fontStyle = 'italic';
+firstParagraph.style.fontWeight = 'bold';
