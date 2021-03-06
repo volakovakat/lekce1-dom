@@ -13,3 +13,8 @@ firstParagraph.style.fontSize = '26px';
 //console.log(firstParagraph.style.fontSize);
 firstParagraph.style.fontStyle = 'italic';
 firstParagraph.style.fontWeight = 'bold';
+
+// 3. Změna obrázku.
+let animalImageElement = document.getElementsByTagName('img')[0];
+animalImageElement.setAttribute('src', 'pes.jpg');
+animalImageElement.setAttribute('alt', 'Silný pes');
